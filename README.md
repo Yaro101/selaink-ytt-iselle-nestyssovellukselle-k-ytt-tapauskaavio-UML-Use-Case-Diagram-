@@ -37,16 +37,22 @@
     5. Trigger xy
     6. Trigger xz
 
-- **Precondition:**
+- **(FIN) Edellytys - (ENG) Precondition:**
+
+  - Ehto määrittää tilan tai ehdon, jonka on oltava tosi tai olemassa, ennen kuin käyttötapaus voidaan suorittaa. Se edustaa oletuksia järjestelmän alkutilasta.
 
   - The precondition specefies the state or condition that must be true or exist before the use case can be executed. It represents the assumptions about the system's initial state.
+
     1. Precondition x
     2. Precondition y
     3. Precondition z
 
-- **Postcondition:**
+- **(FIN) Jälkitilanne - (ENG) Postcondition:**
+
+  - Jälkitilanne kuvaa odotetun tilan tai olosuhteet käyttötapauksen onnistuneen suorittamisen jälkeen. Siinä määritellään muutokset tai tulokset, joiden pitäisi tapahtua järjestelmässä käyttötapauksen seurauksena.
 
   - The Postcondition describes the expected state or conditions after the successful execution of the use case. It defines the changes or results that should occur in the system as a concequence of the use case.
+
     1. Postcondition x
     2. Postcondition y
     3. Postcondition z
