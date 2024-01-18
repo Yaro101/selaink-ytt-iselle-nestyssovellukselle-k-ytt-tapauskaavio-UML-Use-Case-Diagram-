@@ -5,7 +5,9 @@
 - **(FIN) Käyttötapauksen nimi - (ENG) Name of the use case:**
 
   - (FIN) Tämä on käyttötapaukselle annettu tiivis ja kuvaava nimi, joka edustaa tiettyä toiminnallisuutta tai ominaisuutta, jonka järjestelmä (selainpohjainen sovellus) tarjoaa:
+
   - (ENG) This is a concise and descriptive name given to the use case, representing a specific functionality or feature that the system (web browser-based application) provides:
+
     1. Selaa ääniä
     2. Valitse äänestys
     3. Näytä äänestystilanne
@@ -15,14 +17,19 @@
 
 - **(FIN) Käyttäjät - (ENG) Users:**
 
-  - (FIN) Käyttäjät, joita kutsutaan myös toimijoiksi, ovat ulkoisia yksiköitä (ihmisiä, järjestelmiä tai muita yksiköitä), jotka ovat vuorovaikutuksessa järjestelmän kanssa.
-  - (ENG) Users, also known as actors, are external entities (people, systems, or other entities) that interact with the system.
+  - (FIN) Käyttäjät, joita kutsutaan myös toimijoiksi, ovat ulkoisia yksiköitä (ihmisiä, järjestelmiä tai muita yksiköitä), jotka ovat vuorovaikutuksessa järjestelmän kanssa:
+
+  - (ENG) Users, also known as actors, are external entities (people, systems, or other entities) that interact with the system:
+
     1. Käyttäjä
     2. Ylläpitäjä
 
-- **Triggers:**
+- **(FIN) Laukaisee - (ENG) Triggers:**
 
-  - The trigger is an event or condition that initiate the execution of a particular use case. It could be a user action, a time-based event or an external stimulus that starts the use case.
+  - (FIN) Laukaisin on tapahtuma tai ehto, joka käynnistää tietyn käyttötapauksen suorittamisen. Se voi olla käyttäjän toiminta, aikapohjainen tapahtuma tai ulkoinen ärsyke, joka käynnistää käyttötapauksen:
+
+  - (ENG) The trigger is an event or condition that initiate the execution of a particular use case. It could be a user action, a time-based event or an external stimulus that starts the use case:
+
     1. Trigger x
     2. Trigger y
     3. Trigger z
@@ -44,9 +51,14 @@
     2. Postcondition y
     3. Postcondition z
 
-- **Use case flow:**
+- **(FIN) Käyttötapauksen kulku - (ENG) Use case flow:**
 
-  - The use case flow, also known as the main success scenario, outlines the sequence of steps or interactions between the actor(s) and the system to achieve the desired outcome. It represents the normal, expected path of execution.
+  -Käyttötapauksen kulku, joka tunnetaan myös nimellä päämenestysskenaario, hahmottelee toimijan (toimijoiden) ja järjestelmän välisten vaiheiden tai vuorovaikutusten järjestyksen halutun lopputuloksen saavuttamiseksi. Se edustaa normaalia, odotettua suoritusreittiä:
 
-- **Exceptional action:**
-  - Exceptional actions or alternative flows describe alternative paths or scenarios that occur during the execution of a use case. These paths represent deviations from the main success scenario and handle exceptional conditions or error situations.
+  - The use case flow, also known as the main success scenario, outlines the sequence of steps or interactions between the actor(s) and the system to achieve the desired outcome. It represents the normal, expected path of execution:
+
+- **(FIN) Poikkeuksellinen toiminta - (ENG) Exceptional action:**
+
+  - Poikkeukselliset toimet tai vaihtoehtoiset virrat kuvaavat vaihtoehtoisia polkuja tai skenaarioita, joita esiintyy käyttötapauksen suorittamisen aikana. Nämä polut edustavat poikkeamia pääasiallisesta onnistumisskenaariosta ja käsittelevät poikkeuksellisia olosuhteita tai virhetilanteita:
+
+  - Exceptional actions or alternative flows describe alternative paths or scenarios that occur during the execution of a use case. These paths represent deviations from the main success scenario and handle exceptional conditions or error situations:
