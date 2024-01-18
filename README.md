@@ -2,9 +2,10 @@
 
 ## Use case - mallinnus selaimella toimivalle äänestyssovellukselle
 
-- **Name of the use case - Käyttötapauksen nimi:**
+- **(FIN) Käyttötapauksen nimi - (ENG) Name of the use case:**
 
-  - Tämä on käyttötapaukselle annettu tiivis ja kuvaava nimi, joka edustaa tiettyä toiminnallisuutta tai ominaisuutta, jonka järjestelmä (selainpohjainen sovellus) tarjoaa (This is a concise and descriptive name given to the use case, representing a specific functionality or feature that the system (web browser-based application) provides):
+  - (FIN) Tämä on käyttötapaukselle annettu tiivis ja kuvaava nimi, joka edustaa tiettyä toiminnallisuutta tai ominaisuutta, jonka järjestelmä (selainpohjainen sovellus) tarjoaa:
+  - (ENG) This is a concise and descriptive name given to the use case, representing a specific functionality or feature that the system (web browser-based application) provides:
     1. Selaa ääniä
     2. Valitse äänestys
     3. Näytä äänestystilanne
@@ -12,9 +13,10 @@
     5. Tee uusia äänestyksiä
     6. Poista äänestys
 
-- **Users:**
+- **(FIN) Käyttäjät - (ENG) Users:**
 
-  - Users, also known as actors, are external entities (people, systems, or other entities) that interact with the system.
+  - (FIN) Käyttäjät, joita kutsutaan myös toimijoiksi, ovat ulkoisia yksiköitä (ihmisiä, järjestelmiä tai muita yksiköitä), jotka ovat vuorovaikutuksessa järjestelmän kanssa.
+  - (ENG) Users, also known as actors, are external entities (people, systems, or other entities) that interact with the system.
     1. Käyttäjä
     2. Ylläpitäjä
 
