@@ -2,9 +2,9 @@
 
 ## Use case - mallinnus selaimella toimivalle äänestyssovellukselle
 
-- **Name of the use case:**
+- **Name of the use case - Käyttötapauksen nimi:**
 
-  - This is a concise and descriptive name given to the use case, representing a specific functionality or feature that the system (web browser-based application) provides:
+  - Tämä on käyttötapaukselle annettu tiivis ja kuvaava nimi, joka edustaa tiettyä toiminnallisuutta tai ominaisuutta, jonka järjestelmä (selainpohjainen sovellus) tarjoaa (This is a concise and descriptive name given to the use case, representing a specific functionality or feature that the system (web browser-based application) provides):
     1. Selaa ääniä
     2. Valitse äänestys
     3. Näytä äänestystilanne
