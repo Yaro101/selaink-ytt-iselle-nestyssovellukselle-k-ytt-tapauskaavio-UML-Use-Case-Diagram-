@@ -38,9 +38,9 @@
 
   - (ENG) The precondition specefies the state or condition that must be true or exist before the use case can be executed. It represents the assumptions about the system's initial state.
 
-    1. Precondition x
-    2. Precondition y
-    3. Precondition z
+    1. Ylläpitäjän luomien äänestysvaihtoehtojen on oltava olemassa, jotta käyttötapaus 'äänestä' voidaan suorittaa.
+    2. Äänestysvaihtoehtoja on oltava käyttötapauksessa "Näytä äänestystilanne", jotta vaihtoehtojen ja äänestysten luetteloa voidaan esikatsella.
+    3. 'Ylläpitäjä' on jo luonut äänestysvaihtoehdon (-vaihtoehdot), jotta 'Poista äänestys' -käyttötilanne toimisi vaaditulla tavalla.
 
 - **(FIN) Jälkitilanne - (ENG) Postcondition:**
 
@@ -48,15 +48,20 @@
 
   - (ENG) The Postcondition describes the expected state or conditions after the successful execution of the use case. It defines the changes or results that should occur in the system as a concequence of the use case.
 
-    1. Postcondition x
-    2. Postcondition y
-    3. Postcondition z
+    1. Ehdon 'Selaa äänestyksiä' jälkitila: äänestysvaihtoehtojen valikkovalikko, äänestä-painike ja Näytä äänestystilanne -painike.
+    2. Ehdon 'Valitse äänestys' jälkitila: äänestysvaihtoehtojen valikkovalikko, äänestä-painike ja Näytä äänestystilanne -painike.
+    3. Ehdon 'Näytä äänestystilanne' jälkitila: taulukkoluettelo, josta käyvät ilmi äänestysvaihtoehdot ja äänet.
+    4. Ehdon 'äänestä' jälkitila: Valitun äänestysvaihtoehdon äänimäärän lisääminen 1:llä.
+    5. Ehdon 'Tee uusia äänestyksiä' jälkitila: Lisää uusi äänestys-vaihtoehto.
+    6. Ehdon 'Poista äänestys' jälkitila: Poista äänestys-vaihtoehto.
 
 - **(FIN) Käyttötapauksen kulku - (ENG) Use case flow:**
 
   - (FIN) Käyttötapauksen kulku, joka tunnetaan myös nimellä päämenestysskenaario, hahmottelee toimijan (toimijoiden) ja järjestelmän välisten vaiheiden tai vuorovaikutusten järjestyksen halutun lopputuloksen saavuttamiseksi. Se edustaa normaalia, odotettua suoritusreittiä:
+  - [x] Ylläpitäjä lisää äänestysvaihtoehtoja, käyttäjä selaa ja/tai valitsee äänestysvaihtoehtoja ja äänestää äänestysvaihtoehtoa. äänestetyn äänestysvaihtoehdon äänimäärä kasvaa 1:llä joka kerta, kun se saa äänen.
 
   - (ENG) The use case flow, also known as the main success scenario, outlines the sequence of steps or interactions between the actor(s) and the system to achieve the desired outcome. It represents the normal, expected path of execution:
+  - [x] The Admin add voting options, the user browse or/and choose from voting options and vote for voting option. the number of votes for voted for voting option increment by 1 everytime it gets a vote.
 
 - **(FIN) Poikkeuksellinen toiminta - (ENG) Exceptional action:**
 
