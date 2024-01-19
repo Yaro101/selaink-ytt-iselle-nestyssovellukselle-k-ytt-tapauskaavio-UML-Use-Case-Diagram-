@@ -30,12 +30,7 @@
 
   - (ENG) The trigger is an event or condition that initiate the execution of a particular use case. It could be a user action, a time-based event or an external stimulus that starts the use case:
 
-    1. Trigger x
-    2. Trigger y
-    3. Trigger z
-    4. Trigger xx
-    5. Trigger xy
-    6. Trigger xz
+    1. Painikkeen napsautus
 
 - **(FIN) Edellytys - (ENG) Precondition:**
 
