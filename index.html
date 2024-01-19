@@ -12,5 +12,202 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container mt-5 text-center">
+      <h2>Tervetuloa selainpohjaiseen äänestyssovellukseen</h2>
+      <p>Valitse oma roolisi:</p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="showUserInterface()"
+      >
+        Käyttäjä
+      </button>
+      <button
+        type="button"
+        class="btn btn-success ml-2"
+        onclick="showAdminInterface()"
+      >
+        Ylläpitäjä
+      </button>
+    </div>
+
+    <!-- User Interface -->
+    <div id="user-interface" class="container mt-5 d-none">
+      <h2>Käyttäjä</h2>
+      <button type="button" class="btn btn-info mt-3" onclick="browseVotes()">
+        Selaa äänestyksiä
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary mt-3"
+        onclick="browseVotes()"
+      >
+        Valitse äänestys
+      </button>
+      <!-- Form and UI elements for the User Interface -->
+    </div>
+
+    <!-- Browse Votes Modal -->
+    <div
+      class="modal fade"
+      id="browseVotesModal"
+      tabindex="-1"
+      aria-labelledby="browseVotesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="browseVotesModalLabel">
+              Selaa äänestyksiä
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="browseVotesModalBody">
+            <!-- Content will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ylläpitäjä Interface -->
+    <div id="admin-interface" class="container mt-5 d-none">
+      <h2>Ylläpitäjä</h2>
+      <button type="button" class="btn btn-info mt-3" onclick="viewVotes()">
+        Näytä äänestystilanne
+      </button>
+      <button type="button" class="btn btn-success mt-3" onclick="addOption()">
+        Tee uusia äänestyksiä
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger mt-3"
+        onclick="deleteOption()"
+      >
+        Poista äänestys
+      </button>
+    </div>
+
+    <!-- View Votes Modal -->
+    <div
+      class="modal fade"
+      id="viewVotesModal"
+      tabindex="-1"
+      aria-labelledby="viewVotesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="viewVotesModalLabel">
+              Näytä äänestysvaihtoehdot ja äänet
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="viewVotesModalBody">
+            <!-- Content will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Option Modal -->
+    <div
+      class="modal fade"
+      id="addOptionModal"
+      tabindex="-1"
+      aria-labelledby="addOptionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addOptionModalLabel">
+              Lisää äänestysvaihtoehto
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="addOptionModalBody">
+            <label for="newOptionInput">Syötä uusi äänestys-vaihtoehto:</label>
+            <input type="text" class="form-control" id="newOptionInput" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="addOptionConfirm()"
+            >
+              Lisää
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete select modal -->
+    <div class="modal" id="deleteOptionModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Poista äänestysvaihtoehto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="deleteOptionSelect"
+              >Valitse poistettava äänestysvaihtoehto:</label
+            >
+            <select class="form-select" id="deleteOptionSelect"></select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="deleteSelectedOption()"
+            >
+              Poista
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script src="main.js"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
